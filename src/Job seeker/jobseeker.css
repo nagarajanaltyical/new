@@ -1,0 +1,248 @@
+.imgback1 {
+  object-fit: contain;
+  top: 0;
+  width: 100%;
+
+  object-position: center;
+  /* height: 150vh; */
+}
+.imgback2 {
+  object-fit: contain;
+  top: 0;
+  width: 90%;
+
+  object-position: center;
+  /* height: 150vh; */
+}
+.imgqr {
+  object-fit: contain;
+  top: 0;
+  width: 100%;
+
+  object-position: center;
+}
+.imgfeature {
+  object-fit: contain;
+  top: 0;
+  width: 75%;
+  border-radius: 30px;
+  object-position: center;
+}
+
+.imgfeature:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+p {
+  height: 47px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  /* identical to box height */
+
+  text-align: center;
+  font-variant: all-small-caps;
+
+  color: #333333;
+}
+.heading1 {
+  /* width: 853px; */
+  /* left: 817px; */
+  width: 1000px;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  margin-top: -400px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 75px;
+  line-height: 117px;
+  font-variant: all-small-caps;
+
+  color: #fff;
+}
+.heading2 {
+  width: 800px;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  margin-left: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  margin-top: -40px;
+  margin-bottom: 100px;
+  color: #fff;
+}
+.getappimg {
+  object-fit: contain;
+  object-position: center;
+  top: 0;
+  width: 100%;
+}
+
+.two {
+  background-color: #fff;
+  width: 100%;
+
+  /* margin-top: 150vh; */
+}
+.two1 {
+  background-color: #e5faff;
+  flex-direction: column;
+  height: 130vh;
+  width: 100%;
+  /* margin-top: 70px; */
+}
+.card1,
+.card2,
+.card3,
+.card4 {
+  box-sizing: border-box;
+  width: 405px;
+  height: 200px;
+
+  background: rgba(30, 89, 102, 0.06);
+  /* border: 1px solid #1a3237; */
+  border-radius: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.p1,
+.p2,
+.p3,
+.p4 {
+  height: 107px;
+  left: 263px;
+  top: 1586px;
+  margin-left: 10px;
+  padding: 10px;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 29px;
+  text-align: left;
+
+  color: #646464;
+}
+
+.card1:hover {
+  animation: flip 0.5s;
+  background: linear-gradient(to left bottom, #225dd4, #022669);
+}
+.card2:hover {
+  animation: flip 0.5s;
+  background: linear-gradient(to left bottom, #225dd4, #022669);
+}
+.card3:hover {
+  animation: flip 0.5s;
+  background: linear-gradient(to left bottom, #225dd4, #022669);
+}
+
+.card4:hover {
+  animation: flip 0.5s;
+  background: linear-gradient(to left bottom, #225dd4, #022669);
+}
+/* .headerContainer h1 {
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  height: 60px;
+  font-weight: 50;
+  color: black;
+}
+
+.headerContainer p {
+  padding: 0;
+  font-size: 40px;
+  font-weight: lighter;
+  color: black;
+}
+
+.headerContainer button {
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+  background-color: #121619;
+  height: 50px;
+  width: 180px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.headerContainer button:hover {
+  background-color: #07090a;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+} */
+
+@media only screen and (max-width: 650px) {
+  .home {
+    justify-content: center;
+    align-items: center;
+  }
+  .headerContainer h1,
+  .headerContainer p {
+  }
+
+  .headerContainer {
+    margin-left: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121619;
+    color: white;
+  }
+
+  .headerContainer h1 {
+    font-size: 40px;
+    height: 30px;
+    color: white;
+  }
+
+  .headerContainer p {
+    font-size: 30px;
+    color: white;
+  }
+
+  .headerContainer button {
+    background-color: white;
+    color: #121619;
+    margin-bottom: 30px;
+  }
+
+  .headerContainer button:hover {
+    background-color: rgb(225, 225, 225);
+    color: #121619;
+  }
+}
+.header1 {
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 117px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.header2 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}

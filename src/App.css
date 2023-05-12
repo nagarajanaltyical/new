@@ -1,9 +1,16 @@
 .App {
   width: 100%;
-  height: auto;
-  display: flex;
+  height: 100%;
   flex-direction: column;
+  background-size: cover;
+
+  display: flex;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-image: url(./assets/background.png); */
   font-family: Arial, Helvetica, sans-serif;
+  /* background-image: url(./assets//background.jpg); */
 }
 
 body {
