@@ -13,6 +13,7 @@ import Carousel from "../carosual";
 import apple from "../assets/App Store.png";
 import playstore from "../assets/Playstore.png";
 import { styled } from "styled-components";
+import Footer from "../components/Footer";
 
 // const Container = styled.div`
 //   displa;
@@ -286,6 +287,7 @@ function Home() {
         <img
           src={playstore}
           alt="enu"
+          className="playstore"
           style={{ width: "250px", height: "80px", objectFit: "contain" }}
         />
         {/* </button> */}
@@ -293,10 +295,11 @@ function Home() {
         <img
           src={apple}
           alt="enu"
+          className="apple"
           style={{ width: "270px", height: "60px", objectFit: "contain" }}
         />
       </div>
-
+      <Footer />
       {/* </Container> */}
     </>
   );
