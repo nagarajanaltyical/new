@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Jobseeeker from "./Job seeker/Jobseeeker";
+import Jobseekerlist from "./Job seeker/jobseekerlist";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
           <Route path="/contact" exact component={Contact} />
           <Route path="/home" exact component={Home} />
         </Switch>
+        <Route path="/jobseekerlist" exact component={Jobseekerlist} />
+
         {/* <Footer /> */}
       </Router>
     </div>

@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  flex-direction: column;
+  z-index: -1;
+}
+.mainhead {
+  margin-top: 300px;
+  width: 70rem;
+  height: 90px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background: #effcff;
+  border-radius: 50px;
+}

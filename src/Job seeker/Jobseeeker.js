@@ -64,6 +64,7 @@ function Jobseeeker() {
       </div>
       <div className="search">
         <Search />
+        <Link to="/jobseekerlist">get job</Link>
       </div>
       <p style={{ width: "100%", marginTop: "180px" }}>GET JOBS IN 3 PHASES</p>
       <img src={stepjs} alt="menu" className="imgback2" />
@@ -157,6 +158,7 @@ function Jobseeeker() {
           style={{ width: "270px", height: "60px", objectFit: "contain" }}
         />
       </div>
+      
       <img src={ad1} alt="ad1" style={{ width: "100%" }} />
     </>
   );
