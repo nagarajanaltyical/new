@@ -1,15 +1,5 @@
 import React, { useState } from "react";
 import "../Job seeker/jobseekerlist.css";
-import Box from "@mui/material/Box";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import { makeStyles } from "@material-ui/core";
-
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import Terms from "../assets/terms.svg";
-import position from "../assets/position.svg";
 import Jobseekerselectlist from "./Jobseekerselectlist";
 
 export default function Jobseekerlist() {
@@ -21,12 +11,46 @@ export default function Jobseekerlist() {
 
   return (
     <div className="main">
-      <div style={{ backgroundColor: "red", height: "150vh", width: "100%" }}>
-        .
+      <div style={{ height: "50vh", width: "100%" }}>
+        <Jobseekerselectlist />
       </div>
       <div
-        style={{ backgroundColor: "blue", height: "150vh", width: "100%" }}
-      ></div>
+        className="heading"
+        style={{ backgroundColor: "#fff", height: "20vh", width: "100%" }}
+      >
+        Access a wide range of job openings.
+      </div>
+      <div
+        style={{
+          backgroundColor: "blue",
+          height: "150vh",
+          width: "100%",
+          display: "flex",
+          flexDirection: "row",
+        }}
+      >
+        <div
+          style={{
+            height: "100vh",
+            width: "100%",
+          }}
+        >
+          <div className="listmain">
+            <div className="listitem">
+              <div
+                style={{
+                  backgroundColor: "red",
+                  height: "50px",
+                  width: "100px",
+                }}
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{ backgroundColor: "purple", height: "100vh", width: "100%" }}
+        ></div>
+      </div>
       <div
         style={{ backgroundColor: "green", height: "50vh", width: "100%" }}
       ></div>

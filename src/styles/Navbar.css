@@ -16,7 +16,7 @@
   position: fixed;
   width: 100%;
   top: 0%;
-
+  z-index: 999;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   justify-content: space-between;
@@ -27,6 +27,9 @@
 
 .navbar.colorChange {
   background-color: #1a454f;
+  position: fixed;
+  z-index: 999;
+
   width: 100%;
   top: 0%;
   justify-content: space-between;

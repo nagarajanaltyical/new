@@ -3,17 +3,40 @@
   width: 100%;
   height: 100%;
 
+  overflow-anchor: none;
   flex-direction: column;
-  z-index: -1;
 }
-.mainhead {
-  margin-top: 300px;
-  width: 70rem;
-  height: 90px;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: space-around;
+.heading {
+  width: 832px;
+  height: 59px;
+  left: 450px;
+  top: 489px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  /* identical to box height */
+
+  color: #333333;
+}
+.listmain {
+  width: 100%;
+  height: auto;
+  overflow: scroll;
+  scroll-behavior: smooth;
   background: #effcff;
-  border-radius: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.listitem {
+  width: 965px;
+  height: 213px;
+  left: 65px;
+  top: 638px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
 }

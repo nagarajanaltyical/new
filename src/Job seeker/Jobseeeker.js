@@ -32,6 +32,7 @@ import { styled } from "styled-components";
 import Search from "../components/components/search";
 import { findByRole } from "@testing-library/react";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 // import { Button } from "@material-ui/core";
 
 // const Container = styled.div`
@@ -158,7 +159,6 @@ function Jobseeeker() {
           style={{ width: "270px", height: "60px", objectFit: "contain" }}
         />
       </div>
-      
       <img src={ad1} alt="ad1" style={{ width: "100%" }} />
     </>
   );

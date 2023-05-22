@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navbar className="header" />
         <Switch>
           <Route path="/" exact component={Jobseeeker} />
           <Route path="/menu" exact component={Menu} />
@@ -22,9 +22,8 @@ function App() {
           <Route path="/home" exact component={Home} />
         </Switch>
         <Route path="/jobseekerlist" exact component={Jobseekerlist} />
-        <Route path="/jobseekerlist" exact component={Jobseekerlist} />
 
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );
