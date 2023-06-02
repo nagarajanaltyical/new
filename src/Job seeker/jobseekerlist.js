@@ -7,6 +7,8 @@ import education from "../assets/Education.svg";
 import locate from "../assets/Location.svg";
 import suite from "../assets/Experience.svg";
 import pack from "../assets/Package.svg";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 
@@ -16,7 +18,40 @@ function valuetext(value) {
 
 export default function Jobseekerlist() {
   const [age, setAge] = useState("");
+  // const [age, setAge] = useState("");
+  const [isPressedexp, setIsPressedexp] = useState(false);
+  const [isPressedtop, setIsPressedtop] = useState(false);
+  const [isPressedjob, setIsPressedjob] = useState(false);
+  const [isPressedduration, setIsPressedduration] = useState(false);
+  const [isPressedwork, setIsPressedwork] = useState(false);
+  const [isPressedpack, setIsPressedpack] = useState(false);
+  const [isPressededucation, setIsPressededucation] = useState(false);
+  const [isPressedtopcom, setIsPressedtopcom] = useState(false);
 
+  const handlePress1 = () => {
+    setIsPressedexp((prevIsPressedexp) => !prevIsPressedexp);
+  };
+  const handlePress2 = () => {
+    setIsPressedtop((prevIsPressedexp) => !prevIsPressedexp);
+  };
+  const handlePress3 = () => {
+    setIsPressedjob((prevIsPressedexp) => !prevIsPressedexp);
+  };
+  const handlePress4 = () => {
+    setIsPressedduration((prevIsPressedexp) => !prevIsPressedexp);
+  };
+  const handlePress5 = () => {
+    setIsPressedwork((prevIsPressedexp) => !prevIsPressedexp);
+  };
+  const handlePress6 = () => {
+    setIsPressedpack((prevIsPressedexp) => !prevIsPressedexp);
+  };
+  const handlePress7 = () => {
+    setIsPressededucation((prevIsPressedexp) => !prevIsPressedexp);
+  };
+  const handlePress8 = () => {
+    setIsPressedtopcom((prevIsPressedexp) => !prevIsPressedexp);
+  };
   const handleChange = (event) => {
     setAge(event.target.value);
   };
@@ -1051,28 +1086,202 @@ export default function Jobseekerlist() {
           </div>
         </div>
         <div
-          style={{ backgroundColor: "purple", height: "100vh", width: "100%" }}
+          style={{
+            backgroundColor: "purple",
+            height: "100vh",
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+          }}
         >
-          <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-              <Box sx={{ width: 300 }}>
-                <Slider
-                  aria-label="Small steps"
-                  defaultValue={0.00000005}
-                  getAriaValueText={valuetext}
-                  step={0.00000001}
-                  marks
-                  min={-0.00000005}
-                  max={0.0000001}
-                  valueLabelDisplay="auto"
-                />
-              </Box>
-              {/* <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a> */}
-            </div>
+          <div onClick={handlePress1}>
+            Experience
+            {isPressedexp ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
           </div>
+          {/* <button class="dropbtn">Dropdown</button> */}
+          {isPressedexp ? (
+            <Box sx={{ width: 300 }}>
+              <Slider
+                aria-label="Small steps"
+                defaultValue={0.00000005}
+                getAriaValueText={valuetext}
+                step={0.00000001}
+                marks
+                min={-0.00000005}
+                max={0.0000001}
+                valueLabelDisplay="auto"
+              />
+            </Box>
+          ) : (
+            ""
+          )}
+          <div className="dropslide" onClick={handlePress2}>
+            Top Rated Location
+            {isPressedtop ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+          </div>
+          {/* <button class="dropbtn">Dropdown</button> */}
+          {isPressedtop ? (
+            <Box sx={{ width: 300 }}>
+              <Slider
+                aria-label="Small steps"
+                defaultValue={0.00000005}
+                getAriaValueText={valuetext}
+                step={0.00000001}
+                marks
+                min={-0.00000005}
+                max={0.0000001}
+                valueLabelDisplay="auto"
+              />
+            </Box>
+          ) : (
+            ""
+          )}
+          <div onClick={handlePress3}>
+            Job Positions
+            {isPressedjob ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+          </div>
+          {/* <button class="dropbtn">Dropdown</button> */}
+          {isPressedjob ? (
+            <Box sx={{ width: 300 }}>
+              <Slider
+                aria-label="Small steps"
+                defaultValue={0.00000005}
+                getAriaValueText={valuetext}
+                step={0.00000001}
+                marks
+                min={-0.00000005}
+                max={0.0000001}
+                valueLabelDisplay="auto"
+              />
+            </Box>
+          ) : (
+            ""
+          )}
+          <div onClick={handlePress4}>
+            Duration
+            {isPressedduration ? (
+              <KeyboardArrowUpIcon />
+            ) : (
+              <KeyboardArrowDownIcon />
+            )}
+          </div>
+          {/* <button class="dropbtn">Dropdown</button> */}
+          {isPressedduration ? (
+            <Box sx={{ width: 300 }}>
+              <Slider
+                aria-label="Small steps"
+                defaultValue={0.00000005}
+                getAriaValueText={valuetext}
+                step={0.00000001}
+                marks
+                min={-0.00000005}
+                max={0.0000001}
+                valueLabelDisplay="auto"
+              />
+            </Box>
+          ) : (
+            ""
+          )}
+          <div onClick={handlePress5}>
+            Workspace
+            {isPressedwork ? (
+              <KeyboardArrowUpIcon />
+            ) : (
+              <KeyboardArrowDownIcon />
+            )}
+          </div>
+          {/* <button class="dropbtn">Dropdown</button> */}
+          {isPressedwork ? (
+            <Box sx={{ width: 300 }}>
+              <Slider
+                aria-label="Small steps"
+                defaultValue={0.00000005}
+                getAriaValueText={valuetext}
+                step={0.00000001}
+                marks
+                min={-0.00000005}
+                max={0.0000001}
+                valueLabelDisplay="auto"
+              />
+            </Box>
+          ) : (
+            ""
+          )}
+          <div onClick={handlePress6}>
+            Package
+            {isPressedpack ? (
+              <KeyboardArrowUpIcon />
+            ) : (
+              <KeyboardArrowDownIcon />
+            )}
+          </div>
+          {/* <button class="dropbtn">Dropdown</button> */}
+          {isPressedpack ? (
+            <Box sx={{ width: 300 }}>
+              <Slider
+                aria-label="Small steps"
+                defaultValue={0.00000005}
+                getAriaValueText={valuetext}
+                step={0.00000001}
+                marks
+                min={-0.00000005}
+                max={0.0000001}
+                valueLabelDisplay="auto"
+              />
+            </Box>
+          ) : (
+            ""
+          )}
+          <div onClick={handlePress7}>
+            Education
+            {isPressededucation ? (
+              <KeyboardArrowUpIcon />
+            ) : (
+              <KeyboardArrowDownIcon />
+            )}
+          </div>
+          {/* <button class="dropbtn">Dropdown</button> */}
+          {isPressededucation ? (
+            <Box sx={{ width: 300 }}>
+              <Slider
+                aria-label="Small steps"
+                defaultValue={0.00000005}
+                getAriaValueText={valuetext}
+                step={0.00000001}
+                marks
+                min={-0.00000005}
+                max={0.0000001}
+                valueLabelDisplay="auto"
+              />
+            </Box>
+          ) : (
+            ""
+          )}
+          <div onClick={handlePress8}>
+            Top Companies
+            {isPressedtopcom ? (
+              <KeyboardArrowUpIcon />
+            ) : (
+              <KeyboardArrowDownIcon />
+            )}
+          </div>
+          {/* <button class="dropbtn">Dropdown</button> */}
+          {isPressedtopcom ? (
+            <Box sx={{ width: 300 }}>
+              <Slider
+                aria-label="Small steps"
+                defaultValue={0.00000005}
+                getAriaValueText={valuetext}
+                step={0.00000001}
+                marks
+                min={-0.00000005}
+                max={0.0000001}
+                valueLabelDisplay="auto"
+              />
+            </Box>
+          ) : (
+            ""
+          )}
         </div>
       </div>
       <div

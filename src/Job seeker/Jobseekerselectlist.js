@@ -40,6 +40,7 @@ export default function Jobseekerselectlist() {
               >
                 <img
                   src={Terms}
+                  alt=""
                   style={{ width: "20px", marginRight: "3px" }}
                 />
                 <h5>Terms</h5>
