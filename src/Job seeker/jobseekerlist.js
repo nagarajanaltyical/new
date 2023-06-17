@@ -11,6 +11,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
+import BasicTabs from "./Topnavi";
 
 function valuetext(value) {
   return `${value}°C`;
@@ -79,7 +80,7 @@ export default function Jobseekerlist() {
         <div
           style={{
             height: "100vh",
-            width: "100%",
+            width: "50%",
           }}
         >
           <div className="listmain">
@@ -1087,11 +1088,11 @@ export default function Jobseekerlist() {
         </div>
         <div
           style={{
-            backgroundColor: "purple",
+            // backgroundColor: "purple",
             height: "100vh",
-            width: "100%",
-            display: "flex",
-            flexDirection: "column",
+            // width: "100%",
+            // display: "flex",
+            // flexDirection: "column",
           }}
         >
           <div onClick={handlePress1}>
@@ -1101,14 +1102,14 @@ export default function Jobseekerlist() {
           {/* <button class="dropbtn">Dropdown</button> */}
           {isPressedexp ? (
             <Box sx={{ width: 300 }}>
+              {/* <Slider
+                defaultValue={50}
+                aria-label="Default"
+                valueLabelDisplay="auto"
+              /> */}
               <Slider
-                aria-label="Small steps"
-                defaultValue={0.00000005}
-                getAriaValueText={valuetext}
-                step={0.00000001}
-                marks
-                min={-0.00000005}
-                max={0.0000001}
+                defaultValue={50}
+                aria-label="Default"
                 valueLabelDisplay="auto"
               />
             </Box>
@@ -1123,13 +1124,8 @@ export default function Jobseekerlist() {
           {isPressedtop ? (
             <Box sx={{ width: 300 }}>
               <Slider
-                aria-label="Small steps"
-                defaultValue={0.00000005}
-                getAriaValueText={valuetext}
-                step={0.00000001}
-                marks
-                min={-0.00000005}
-                max={0.0000001}
+                defaultValue={50}
+                aria-label="Default"
                 valueLabelDisplay="auto"
               />
             </Box>
@@ -1144,13 +1140,8 @@ export default function Jobseekerlist() {
           {isPressedjob ? (
             <Box sx={{ width: 300 }}>
               <Slider
-                aria-label="Small steps"
-                defaultValue={0.00000005}
-                getAriaValueText={valuetext}
-                step={0.00000001}
-                marks
-                min={-0.00000005}
-                max={0.0000001}
+                defaultValue={50}
+                aria-label="Default"
                 valueLabelDisplay="auto"
               />
             </Box>
@@ -1169,13 +1160,8 @@ export default function Jobseekerlist() {
           {isPressedduration ? (
             <Box sx={{ width: 300 }}>
               <Slider
-                aria-label="Small steps"
-                defaultValue={0.00000005}
-                getAriaValueText={valuetext}
-                step={0.00000001}
-                marks
-                min={-0.00000005}
-                max={0.0000001}
+                defaultValue={50}
+                aria-label="Default"
                 valueLabelDisplay="auto"
               />
             </Box>
@@ -1194,13 +1180,8 @@ export default function Jobseekerlist() {
           {isPressedwork ? (
             <Box sx={{ width: 300 }}>
               <Slider
-                aria-label="Small steps"
-                defaultValue={0.00000005}
-                getAriaValueText={valuetext}
-                step={0.00000001}
-                marks
-                min={-0.00000005}
-                max={0.0000001}
+                defaultValue={50}
+                aria-label="Default"
                 valueLabelDisplay="auto"
               />
             </Box>
@@ -1219,13 +1200,8 @@ export default function Jobseekerlist() {
           {isPressedpack ? (
             <Box sx={{ width: 300 }}>
               <Slider
-                aria-label="Small steps"
-                defaultValue={0.00000005}
-                getAriaValueText={valuetext}
-                step={0.00000001}
-                marks
-                min={-0.00000005}
-                max={0.0000001}
+                defaultValue={50}
+                aria-label="Default"
                 valueLabelDisplay="auto"
               />
             </Box>
@@ -1244,13 +1220,8 @@ export default function Jobseekerlist() {
           {isPressededucation ? (
             <Box sx={{ width: 300 }}>
               <Slider
-                aria-label="Small steps"
-                defaultValue={0.00000005}
-                getAriaValueText={valuetext}
-                step={0.00000001}
-                marks
-                min={-0.00000005}
-                max={0.0000001}
+                defaultValue={50}
+                aria-label="Default"
                 valueLabelDisplay="auto"
               />
             </Box>
@@ -1269,13 +1240,8 @@ export default function Jobseekerlist() {
           {isPressedtopcom ? (
             <Box sx={{ width: 300 }}>
               <Slider
-                aria-label="Small steps"
-                defaultValue={0.00000005}
-                getAriaValueText={valuetext}
-                step={0.00000001}
-                marks
-                min={-0.00000005}
-                max={0.0000001}
+                defaultValue={50}
+                aria-label="Default"
                 valueLabelDisplay="auto"
               />
             </Box>
@@ -1284,9 +1250,9 @@ export default function Jobseekerlist() {
           )}
         </div>
       </div>
-      <div
-        style={{ backgroundColor: "green", height: "50vh", width: "100%" }}
-      ></div>
+      <div style={{ height: "50vh", width: "100%" }}>
+        <BasicTabs />
+      </div>
       {/* <div
         style={{
           display: "flex",
