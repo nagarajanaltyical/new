@@ -47,7 +47,7 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box sx={{ minWidth: "500px" }}>
       <Box
         sx={{
           borderBottom: 1,
@@ -69,8 +69,36 @@ export default function BasicTabs() {
       </Box>
       <TabPanel value={value} index={0}>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <TextField label="Username" />
-          <TextField label="Mobile Number" /> <TextField label="Mail Id" />
+          <TextField
+            label="Username"
+            sx={{
+              maxWidth: 777,
+              "& .MuiOutlinedInput-root": {
+                borderRadius: "20px", // Adjust the value as per your requirement
+              },
+              marginBottom: 5,
+            }}
+          />
+          <TextField
+            label="Mobile Number"
+            sx={{
+              width: 777,
+              "& .MuiOutlinedInput-root": {
+                borderRadius: "20px", // Adjust the value as per your requirement
+              },
+              marginBottom: 5,
+            }}
+          />
+          <TextField
+            label="Mail Id"
+            sx={{
+              width: 777,
+              "& .MuiOutlinedInput-root": {
+                borderRadius: "20px", // Adjust the value as per your requirement
+              },
+              marginBottom: 5,
+            }}
+          />
         </div>
       </TabPanel>
       <TabPanel value={value} index={1}>

@@ -1,0 +1,36 @@
+.edumain {
+  display: flex;
+  width: 80%;
+}
+.input-field {
+  background: linear-gradient(
+    90deg,
+    #16323b 7.99%,
+    #1f4c5b 30.91%,
+    #1e5966 68.78%,
+    #16323b 94.79%
+  );
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 20%;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+.input-field:hover {
+  background: linear-gradient(
+    -90deg,
+    #16323b 7.99%,
+    #1f4c5b 30.91%,
+    #1e5966 68.78%,
+    #16323b 94.79%
+  );
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3); */
+}
+@media screen and (max-width: 480px) {
+  .edumain {
+    display: flex;
+    width: 100%;
+  }
+}

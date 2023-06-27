@@ -1250,7 +1250,7 @@ export default function Jobseekerlist() {
           )}
         </div>
       </div>
-      <div style={{ height: "50vh", width: "100%" }}>
+      <div style={{ height: "100vh", width: "100%" }}>
         <BasicTabs />
       </div>
       {/* <div

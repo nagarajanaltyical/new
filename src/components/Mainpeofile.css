@@ -1,0 +1,73 @@
+.customFileInput {
+  display: inline-block;
+  padding: 8px 16px;
+  background: linear-gradient(
+    90deg,
+    #16323b 7.99%,
+    #1f4c5b 30.91%,
+    #1e5966 68.78%,
+    #16323b 94.79%
+  );
+
+  /* background-color: #f0f0f0; */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Add other desired styles */
+}
+
+.tabs {
+  background-color: "red";
+}
+.titlestyle {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 35px;
+  color: #333;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.customFileInput:hover {
+  background-color: #e0e0e0;
+}
+
+.customFileInput:active {
+  background-color: #d0d0d0;
+}
+
+.fileInput {
+  display: none;
+}
+
+.materialUIInput {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  background-color: white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.add_profile {
+  font-size: 40px;
+  margin-top: 30px;
+  font-weight: 500;
+  line-height: 47px;
+  letter-spacing: 0em;
+}
+@media (max-width: 480px) {
+  .add_profile {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0em;
+  }
+  .titlestyle {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
