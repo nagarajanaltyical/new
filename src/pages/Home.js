@@ -21,18 +21,18 @@ import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <>
+    <div style={{ display: "flex", flex: 1, flexDirection: "row" }}>
       {/* <Container> */}
-      <div style={{ position: "static" }}>
+      <div>
         <img src={homeimg} alt="menu" className="imgback" />
-        <p className="heading1"> "NEW OFFERS ARE WAITING FOR YOU!!!”</p>
-        <div className="heading2">
-          Connecting job seekers and employers has never been easier with our
-          job portal app. Let us help you find your dream job or the perfect
-          candidate for your company.
-        </div>
       </div>
-      <div className="two">
+      <p className="heading1">"NEW OFFERS ARE WAITING FOR YOU!!!”</p>
+      <p className="heading2">
+        Connecting job seekers and employers has never been easier with our job
+        portal app. Let us help you find your dream job or the perfect candidate
+        for your company.
+      </p>
+      {/* <div className="two">
         <img
           src={Box}
           alt="menu"
@@ -252,7 +252,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <Link to="/menu">
           <button> ORDER NOW </button>
         </Link> */}
@@ -261,10 +261,10 @@ function Home() {
       {/* <div style={{ display: "block", marginTop: "200px" }}> */}
       {/* </div> */}
       {/* <div style={{ display: "flex" }}> */}
-      <Carousel />
+      {/* <Carousel /> */}
       {/* </div> */}
-      <img src={getapp} alt="enu" className="getappimg" />
-      <div
+      {/* <img src={getapp} alt="enu" className="getappimg" /> */}
+      {/* <div
         style={{
           position: "relative",
           width: "100%",
@@ -277,20 +277,13 @@ function Home() {
           // flexDirection: "column",
         }}
       >
-        {/* <button
-          style={{
-            backgroundColor: "transparent",
-            width: "300px",
-            height: "100px",
-          }}
-        > */}
+       
         <img
           src={playstore}
           alt="enu"
           className="playstore"
           style={{ width: "250px", height: "80px", objectFit: "contain" }}
         />
-        {/* </button> */}
 
         <img
           src={apple}
@@ -298,10 +291,10 @@ function Home() {
           className="apple"
           style={{ width: "270px", height: "60px", objectFit: "contain" }}
         />
-      </div>
-      <Footer />
+      </div> */}
+      {/* <Footer /> */}
       {/* </Container> */}
-    </>
+    </div>
   );
 }
 

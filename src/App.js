@@ -10,24 +10,23 @@ import Jobseeeker from "./Job seeker/Jobseeeker";
 import Jobseekerlist from "./Job seeker/jobseekerlist";
 import Mainprofile from "./components/Mainprofile";
 import Js from "./components/indexxx";
+import "../../new/src/styles/navbarx.css";
 import Mainjobprovider from "./components/jobprovider/mainjobprovider";
 function App() {
   return (
     <div className="App">
       {/* <Js /> */}
       <Router>
-        <Navbar className="header" />
+        <Navbar />
         <Switch>
           <Route path="/" exact component={Jobseeeker} />
-          {/* <Route path="/menu" exact component={Menu} /> */}
           <Route path="/about" exact component={About} />
           <Route path="/Jobprovider" exact component={Mainjobprovider} />
-
           <Route path="/contact" exact component={Contact} />
           <Route path="/home" exact component={Home} />
           <Route path="/mainprofile" exact component={Mainprofile} />
         </Switch>
-        <Route path="/jobseekerlist" exact component={Jobseekerlist} />
+        {/* <Route path="/jobseekerlist" exact component={Jobseekerlist} /> */}
       </Router>
       {/* <div style={{ height: "400px" }}>
           <Footer />
@@ -35,5 +34,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
